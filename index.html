@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер обратного отсчёта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Введите дату для отсчёта:</h1>
+        <form id="timerForm">
+            <input type="datetime-local" id="targetDateInput" required>
+            <button type="submit">Запустить таймер</button>
+        </form>
+
+        <div class="timer" id="timer">
+            <div><span class="number" id="days">0</span> дней</div>
+            <div><span class="number" id="hours">0</span> часов</div>
+            <div><span class="number" id="minutes">0</span> минут</div>
+            <div><span class="number" id="seconds">0</span> секунд</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
